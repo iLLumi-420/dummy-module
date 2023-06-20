@@ -1,6 +1,3 @@
-def greet_user(name):
-    print(f'Hello {name}, welcome to learning python')
-
 def addition(number1, number2):
     return number1 + number2
 
