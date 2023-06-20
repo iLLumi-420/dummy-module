@@ -1,10 +1,8 @@
 setup.py
 dummy/__init__.py
-dummy/calculations.py
 dummy/greet.py
 dummy.egg-info/PKG-INFO
 dummy.egg-info/SOURCES.txt
 dummy.egg-info/dependency_links.txt
 dummy.egg-info/top_level.txt
-tests/test_calculations.py
 tests/test_greet.py
