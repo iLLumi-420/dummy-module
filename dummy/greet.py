@@ -1,2 +1,3 @@
 def greet_user(name):
-    print(f'Hello {name}')
+    name = name.strip()
+    return f'Hello {name}'
