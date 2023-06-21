@@ -1,25 +1,38 @@
-import unittest
 from dummy.greet import greet_user
 
-class GreetTestCase(unittest.TestCase):
-    def test_greet_user(self):
+def test_greet_user():
 
-        result = greet_user('John')
-        self.assertEqual(result, 'Hello John')
+    expected_output = 'Hello John'
+    assert greet_user('John') == expected_output
 
-        result = greet_user('  John  ')
-        self.assertEqual(result, 'Hello John')
+    expected_output = 'Hello John'
+    assert greet_user('   John   ') == expected_output
 
-        result = greet_user('')
-        self.assertEqual(result, 'Hello ')
+    expected_output = 'Hello '
+    assert greet_user('') == expected_output
 
-        result = greet_user(None)
-        self.assertCountEqual(result, 'Not a string value')
+    expected_output = 'Not a string value'
+    assert greet_user(None) == expected_output
 
-        result = greet_user(['John'])
-        self.assertCountEqual(result, 'Not a string value')
+    expected_output = 'Not a string value'
+    assert greet_user(['John', 'Mary']) == expected_output
 
-    
 
-if __name__ == '__main__':
-    unittest.main()
+# class GreetTestCase(unittest.TestCase):
+#     def test_greet_user(self):
+
+#         result = greet_user('John')
+#         self.assertEqual(result, 'Hello John')
+
+#         result = greet_user('  John  ')
+#         self.assertEqual(result, 'Hello John')
+
+#         result = greet_user('')
+#         self.assertEqual(result, 'Hello ')
+
+#         result = greet_user(None)
+#         self.assertCountEqual(result, 'Not a string value')
+
+#         result = greet_user(['John'])
+#         self.assertCountEqual(result, 'Not a string value')
+
