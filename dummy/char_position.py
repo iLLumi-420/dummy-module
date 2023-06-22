@@ -7,7 +7,3 @@ def char_position(text):
         position_dict[char].add(i)
 
     return position_dict
-    
-text = 'Hello'
-
-print(char_position(text))
