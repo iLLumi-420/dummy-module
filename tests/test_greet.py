@@ -11,9 +11,10 @@ from dummy.greet import greet_user
 
 ])
 def test_greet_user(greet, expected_output):
-        assert greet_user(greet) == expected_output
+    assert greet_user(greet) == expected_output
 
 
 if __name__ == '__main__':
     print('Running greet test directly')
     pytest.main([__file__])
+    

@@ -11,7 +11,7 @@ def test_sum():
 
 if __name__ == '__main__':
     print('Running sum test directly')
-    pytest.main([__file__])
+    test_sum()
 
 
 
