@@ -25,3 +25,8 @@ def test_formaT_data_for_display(people_data):
 
 def test_format_data_for_excel(people_data):
     assert format_data_for_excel(people_data) == 'given,family,title\nAlfonsa,Ruiz,Senior Software Engineer\nSayid,Khan,Project Manager\n'
+
+
+if __name__ == '__main__':
+    print('Running format_display test directly')
+    pytest.main([__file__])

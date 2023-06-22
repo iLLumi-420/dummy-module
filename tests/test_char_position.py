@@ -11,4 +11,7 @@ from dummy.char_position import char_position
 def test_char_position(text, expected_output):
     assert char_position(text) == expected_output
 
+if __name__ == '__main__':
+    print('Running Char_Posotion test directly')
+    pytest.main([__file__])
 
